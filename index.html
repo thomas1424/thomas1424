@@ -14,6 +14,7 @@
             <option value="medium">Medium</option>
             <option value="hard">Hard</option>
         </select>
+        <button id="theme-toggle" class="btn">Toggle Dark Mode</button>
         <p id="text-to-type" class="text-to-type">Click "Start" to begin the test.</p>
         <textarea id="input-area" class="input-area" placeholder="Start typing..." disabled></textarea>
         <div class="results">
@@ -26,6 +27,17 @@
         <h2>Past Results</h2>
         <ul id="results-list" class="results-list"></ul>
     </div>
+
+    <!-- Modal for results -->
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>Test Results</h2>
+            <p>Words per minute: <span id="modal-wpm">0</span></p>
+            <p>Accuracy: <span id="modal-accuracy">100</span>%</p>
+        </div>
+    </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>
