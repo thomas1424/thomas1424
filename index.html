@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Advanced Typing Speed Test</h1>
+        <select id="difficulty" class="difficulty-select">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <p id="text-to-type" class="text-to-type">Click "Start" to begin the test.</p>
+        <textarea id="input-area" class="input-area" placeholder="Start typing..." disabled></textarea>
+        <div class="results">
+            <p>Time: <span id="time">60</span> seconds</p>
+            <p>Words per minute: <span id="wpm">0</span></p>
+            <p>Accuracy: <span id="accuracy">100</span>%</p>
+        </div>
+        <button id="start-btn" class="btn">Start</button>
+        <button id="restart-btn" class="btn" disabled>Restart</button>
+        <h2>Past Results</h2>
+        <ul id="results-list" class="results-list"></ul>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
